@@ -1,0 +1,361 @@
+body {
+  background-color: #1d1d1d;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2016&q=80");
+  background-position: left 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  font-family: "Nunito", sans-serif;
+  color: #f3f2ee;
+  margin: 0;
+  height: 100%;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  top: 0;
+  transition: top 0.3s;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* About Me - page specific styling */
+#about-me {
+  text-align: center;
+}
+
+#header,
+#about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.subtitle {
+  font-size: 4rem;
+}
+
+header > h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 6rem;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+  font-weight: 200;
+  line-height: 100%;
+}
+
+header > span {
+  font-size: 6rem;
+}
+
+.paragraph {
+  display: flex;
+  padding: 40px;
+  grid-column: 1;
+  grid-row: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease-in;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.paragraph > img {
+  width: 20em;
+  height: 100%;
+  display: flex;
+  border-radius: 160px;
+}
+
+.paragraph > p {
+  font-size: 1.1rem;
+}
+
+/* Startepage - page specific styling*/
+.container {
+  width: auto;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-style {
+  padding: 10px;
+  grid-column: 1;
+  grid-row: 1;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease-in;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* align-items: center; */
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 5rem;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-self: center;
+  text-transform: lowercase;
+}
+
+h2.experience {
+  width: auto;
+  text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.box-style.experience {
+  padding: 25px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+ul.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: auto;
+  flex-flow: wrap;
+}
+
+.skills > li {
+  list-style: none;
+  height: max-content;
+  width: fit-content;
+  background-color: #f2992e;
+  margin: 10px 50px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  justify-content: flex-start;
+}
+
+/* Footer Styling*/
+#footer {
+  position: relative;
+  bottom: 0;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 40px 0 40px 0;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  margin-top: 200px;
+}
+
+footer > div {
+  margin: 0 25% 0 25%;
+}
+
+.social-media {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: auto;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+
+.icon.linkedin {
+  background-image: url("./img/linkedin.svg");
+}
+
+.icon.github {
+  background-image: url("./img/github.svg");
+}
+
+.icon.twitter {
+  background-image: url("./img/twitter.svg");
+}
+
+.icon.tumblr {
+  background-image: url("./img/tumblr.svg");
+}
+
+.icon.linkedin:hover {
+  background-image: url("./img/linkedin-hover.svg");
+}
+
+.icon.github:hover {
+  background-image: url("./img/github-hover.svg");
+}
+
+.icon.twitter:hover {
+  background-image: url("./img/twitter-hover.svg");
+}
+
+.icon.tumblr:hover {
+  background-image: url("./img/tumblr-hover.svg");
+}
+
+/* Responsive Styling - Mobile */
+@media (max-width: 600px) {
+  #header,
+  #about-me {
+    height: 60%;
+  }
+
+  header > h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills {
+    padding: 0 20px;
+  }
+
+  .skills > li {
+    font-size: 0.8rem;
+    margin: 10px 5px;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    margin: 20px 0;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .box-style.experience {
+    margin: 0;
+  }
+
+  .social-media {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-basis: auto;
+  }
+}
+
+/* Responsive Styling - Desktops, Tablets */
+@media (min-width: 900px) {
+  h2 {
+    width: 20%;
+  }
+
+  .wrapper {
+    display: flex;
+  }
+
+  /* .container {
+    margin: 60px 0;
+  } */
+
+  .container {
+    margin: 20px 0;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .box-style.experience {
+    margin: 0;
+  }
+
+  .container:nth-child(odd) {
+    align-items: flex-end;
+    margin-right: 8%;
+  }
+  
+  .container:nth-child(even) {
+    align-items: flex-start;
+    margin-left: 8%;
+  }
+
+  .box-style.experience {
+    width: 50%;
+  }
+
+  .paragraph {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .paragraph > p {
+    padding-left: 70px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .skills {
+    padding-right: 70px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .box-style.experience {
+    margin-right: 10%;
+    width: 50%;
+  } */
+  .paragraph {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .paragraph > p {
+    padding-left: 70px;
+  }
+}
