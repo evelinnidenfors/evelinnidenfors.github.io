@@ -261,6 +261,13 @@ footer > div {
     align-items: center;
   }
 
+  .paragraph > img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    border-radius: 160px;
+  }
+
   .container {
     margin: 20px 0;
   }
