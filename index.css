@@ -1,12 +1,5 @@
 body {
   background-color: #1d1d1d;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2016&q=80");
-  background-position: left 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
   font-family: "Nunito", sans-serif;
   color: #f3f2ee;
   margin: 0;
@@ -223,6 +216,14 @@ footer > div {
 
 /* Responsive Styling - Mobile */
 @media (max-width: 600px) {
+  body {
+    background-image: url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2016&q=80");
+    background-repeat: no-repeat;
+    background-size: 168% auto;
+    background-attachment: fixed;
+    background-position: top left;
+  }
+
   #header,
   #about-me {
     height: 60%;
@@ -294,6 +295,16 @@ footer > div {
 
 /* Responsive Styling - Desktops, Tablets */
 @media (min-width: 900px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2016&q=80");
+    background-position: left 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+
   h2 {
     width: 20%;
   }
@@ -301,10 +312,6 @@ footer > div {
   .wrapper {
     display: flex;
   }
-
-  /* .container {
-    margin: 60px 0;
-  } */
 
   .container {
     margin: 20px 0;
@@ -344,6 +351,16 @@ footer > div {
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2016&q=80");
+    background-position: left 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+
   .skills {
     padding-right: 70px;
   }
@@ -353,10 +370,6 @@ footer > div {
     flex-direction: column;
   }
 
-  /* .box-style.experience {
-    margin-right: 10%;
-    width: 50%;
-  } */
   .paragraph {
     padding-left: 200px;
     padding-right: 200px;
