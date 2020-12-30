@@ -35,6 +35,13 @@ body {
   text-align: center;
 }
 
+.about-me.img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  border-radius: 160px;
+}
+
 #header,
 #about-me {
   display: flex;
@@ -336,6 +343,13 @@ footer > div {
     margin-left: 8%;
   }
 
+  .about-me.img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    border-radius: 160px;
+  }
+
   .box-style.experience {
     width: 50%;
   }
@@ -368,6 +382,13 @@ footer > div {
   .wrapper {
     display: flex;
     flex-direction: column;
+  }
+
+  .about-me.img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    border-radius: 160px;
   }
 
   .paragraph {
